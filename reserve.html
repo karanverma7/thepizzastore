@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/home.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/reservation.css">
+    <link rel="icon" href="media/logo1.jpg" type="image/x-icon"> 
+    <title>The Pizza</title>
+    <script type="javascript" src="scripts/index.js"></script>
+</head>
+<body>
+    <nav>
+        <div id="logo">
+            <img src="media/logo.png" alt="Logo" height="55px" width="200px">
+        </div>
+        <div id="navbar">
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="aboutUs.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div id="book">
+            <a href="reserve.html">Book a Table</a>
+        </div>
+        <div id="dropnav">
+            <div class="dropdown">
+                <button class="dropbtn"><img src="media/dropdown.png" alt="dropdown"></button>
+                <div class="dropdown-content">
+                    <a href="home.html">Home</a>
+                    <a href="menu.html">Menu</a>
+                    <a href="aboutUs.html">About Us</a>
+                    <a href="contact.html">Contact Us</a>
+                    <a href="reserve.html">Reserve a Table</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div id="header">    
+        <div id="slideText">Reservation
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+    </div>
+    <article>
+        <div class="meta show">
+            <a href="home.html" style="padding-left: 70px;"> Home </a> &nbsp;
+            <img src="media/Group.png" alt="next" height="13px" width="auto">&nbsp;
+            <a href="menu.html"> Book</a>
+        </div>
+
+        <section class="sectionHead" style="padding-top: 20px;">
+            Book Your Table<br>
+            <span class="meta">
+                Lorem, ipsum dolor sit amet consectetur adipisicing.
+            </span>
+        </section>
+        
+            <form name="Reserve" method="POST" data-netlify="true">
+                <div id="reservation">
+                    <div>
+                        <label for="name">
+                            Your Name:
+                        </label><br>
+                        <input type="text" name="Name" required placeholder="Enter your name">
+                    </div>
+                    <div>
+                        <label for="date">
+                            Date:
+                        </label><br>
+                        <input type="date" name="Date" required>
+                    </div>
+                    <div>
+                        <label for="time">
+                            Time:
+                        </label><br>
+                        <input type="time" name="Time" required>
+                    </div>
+                    <div>
+                        <label for="guest">
+                            Guest:
+                        </label><br>
+                        <input type="number" name="Guest" min="1" max="10" required placeholder="1">
+                    </div>
+                </div>
+                <div id="message">
+                    <label for="name">
+                        Message:
+                    </label><br>
+                    <textarea name="Message" placeholder="Enter message"></textarea> <br><br>
+                    <input type="submit">
+                </div>
+            </form>
+        <div style="margin-top: 200px;">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.9029319399474!2d77.21732711453032!3d28.63267118241769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd1d8e6bed2d%3A0xd2260a8e0dd4732b!2sCentral%20Park!5e0!3m2!1sen!2sin!4v1598708727673!5m2!1sen!2sin" 
+            width="100%" height="360px" frameborder="0" style="border-top: 1px solid rgb(24, 24, 24);" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>    
+
+        <div id="menuFooter">
+            <div class="sec">
+                <img src="media/logo.png" alt="logo" height="50px" width="170px"> <br><br>
+                <br>
+                <span class="meta">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nesciunt!</span>
+                <br><br>
+                <div id="socialMediaDark">
+                    <a href="#"><img src="media/facebook.png" alt="Address"></a> &nbsp;&nbsp;&nbsp;
+                    <a href="#"><img src="media/twitter.png" alt="Address"></a> &nbsp;&nbsp;&nbsp;
+                    <a href="#"><img src="media/instagram.png" alt="Address"></a>
+                </div>
+            </div>
+            <div class="sec">
+                <h3>Newsletter</h3>
+                <br>
+                <span class="meta">Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                <form name="Newsletter" method="POST" data-netlify="true">
+                    <br>
+                    <input type="email" placeholder="enter your email" id="emailInput" required>
+                    <input type="submit" value="Subscribe" id="submitButton"> 
+                </form>
+            </div>
+            <div class="sec">
+                <h3>How To Find Us</h3>
+                <br>
+                <span class="meta">
+                    <img src="media/pin.png" alt="Address" height="15px" width="auto" style="filter: invert(60%)">&nbsp; Connaught Place, New Delhi (India) <br><br>
+                    <img src="media/cellphone.png" alt="contact" height="15px" width="auto" style="filter: invert(60%)">&nbsp; +0987 193-34-76 <br><br>
+                    <img src="media/mail.png" alt="mail" height="15px" width="auto" style="filter: invert(60%)">&nbsp; thepizza@mail.com
+                </span>
+            </div>
+        </div>
+        <div id="menuCopyright">
+            <span class="meta">
+                Copyright © 2020 The Pizza. All rights reserved.
+            </span>
+            
+        </div>
+    </article>
+</body>
+</html>

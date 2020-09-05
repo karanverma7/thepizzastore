@@ -1,0 +1,197 @@
+#header {
+    background-image: url(/media/menuHeader-min.jpg);
+    background-size: cover;
+    background-repeat: space;
+    background-position: left;
+    height: 240px;
+    position: relative;
+    top: 80px;
+    z-index: 1;
+}
+
+#slideText {
+    position: absolute;
+    top: 65px;
+    left: 60px;
+    color: white;
+    font-size: 65px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.foodMenu {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+    justify-items: center;
+    margin: 40px 80px;
+}
+
+.foodMenu .item {
+    display: flex;
+    padding: 15px 30px;   
+}
+
+.foodMenu .item img {
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+} 
+
+.foodMenu .item p {
+    margin-top: 27px;
+    font-weight: 500;
+    padding: 0px 30px;
+    
+}
+
+.foodMenu .item .itemPrice {
+    font-weight: bold;
+    color: rgb(146, 5, 5) ;
+    margin-top: 27px;
+}
+
+#menuFooter {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 50px;
+    padding: 60px;
+    background-color: rgb(17, 17, 17);
+    color: rgb(226, 226, 226);
+}
+
+#menuFooter .sec {
+    width: 300px;
+}
+
+
+#socialMediaDark img {
+    height: 18px;
+    width: auto;
+    opacity: 0.8;
+    filter: invert(80%);
+}
+
+#socialMedia img:hover {
+    opacity: 1;
+}
+
+
+#emailInput {
+    border: 1px solid rgb(218, 218, 218);
+    height: 36px;
+    width: 180px;
+    opacity: 0.8;
+    padding-left: 12px;
+}
+
+#menuCopyright {
+    background-color: rgb(8, 8, 8);
+    padding: 30px 70px;
+}
+
+
+/****************************** Media Queries ****************************/
+
+@media only screen and (max-width: 900px) {
+    
+    #header {
+        height: 220px;
+    }
+
+    #slideText {
+        top: 60px;
+        left: 40px;
+        font-size: 50px;
+    }
+    
+    #dropnav {
+        float: right;
+        padding-left: 400px;
+    }
+
+    #menuFooter {
+        gap: 0px;
+        padding: 30px;
+    }
+
+    #menuFooter .sec {
+        padding: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    
+    .foodMenu {
+        grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+        justify-items: center;
+        margin: 0px;
+    }
+
+    #header {
+        height: 120px;
+    }
+    #dropnav {
+        float: right;
+        padding-left: 70px;
+    }
+    
+    #header img {
+        height: 100%;
+        width: 100%;
+    }
+    #slideText {
+        top: 40px;
+        left: 20px;
+        font-size: 30px;
+    }
+
+    #slideText p {
+        font-size: 10px;
+    }
+
+    .foodMenu {
+        margin: 0px;
+        justify-items: start;
+    }
+
+    .foodMenu .item{
+        margin: 0px;
+    }
+
+    .foodMenu .item img {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+    }
+    
+    .foodMenu .item p {
+        margin-top: 2px;
+        font-weight: 400;
+        padding: 0px 12px;   
+    }
+    
+    .foodMenu .item .itemPrice {
+        font-weight: 550;
+        color: rgb(146, 5, 5) ;
+        margin-top: 2px;
+    }
+
+    .sectionHead {
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+
+    .show {
+        display: none;
+    }
+
+    #menuFooter {
+        padding: 25px;
+    }
+}

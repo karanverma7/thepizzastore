@@ -1,0 +1,585 @@
+body {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;    
+    width: 100%;
+    background-color: white;
+    z-index: 2;
+}
+
+#navbar {
+    display: flex;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: medium;
+    font-weight: 550;
+}
+
+#navbar a {
+    padding: 20px;
+    text-decoration: none;
+    color: black;   
+}
+
+#navbar a:hover {
+    color: rgb(102, 3, 3);
+    border-bottom: 1px solid rgb(102, 3, 3);
+}
+
+
+#book a {
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+    align-self: center;
+    border: 2px solid rgb(146, 5, 5);
+    padding: 15px 30px 15px 30px;
+    transition: background 300ms ease-out;
+    font-weight: 700;
+}
+
+#book a:hover {
+    background: rgb(146, 5, 5);
+    color: white;
+}
+
+header {
+    background-image: url(/media/slideImage1-min.jpg);
+    background-size: cover;
+    background-repeat: space;
+    background-position: left;
+    height: 460px;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+}
+
+#slideText {
+    position: absolute;
+    top: 80px;
+    left: 60px;
+    color: seashell;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#slideText p {
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(223, 223, 223);
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    background: rgb(146, 5, 5);
+    text-align: center;
+    border-radius: 7px;
+    padding: 10px 20px 10px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    transition: background 300ms ease-out;
+}
+
+#menu a:hover {
+    background: white;
+    color: rgb(146, 5, 5);
+}
+
+#add a {
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+    border: 2px solid rgb(146, 5, 5);
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    transition: background 300ms ease-out;
+    font-size: small;
+}
+
+article {
+    margin-top: 100px;
+}
+
+#add a:hover {
+    background: rgb(146, 5, 5);
+    color: white;
+}
+
+#popular {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0px 80px 80px 80px;
+}
+.popDish {
+    height: 370px;
+    width: 260px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: rgb(241, 241, 241);
+    margin: 0px 20px;
+    margin-top: 50px;
+    box-shadow: 2px 2px 5px rgb(122, 122, 122);
+}
+
+.popDish:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 4px 5px rgb(122, 122, 122);
+}
+
+.popDish #price {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(146, 5, 5) ;
+}
+.popDish img {
+    height: 220px;
+    width: 260px;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.sectionHead {
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 50px;
+    margin: 0px 30px;
+}
+
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid rgb(196, 192, 192);
+    padding-top: 30px;
+    margin: 0px 30px 50px 30px;
+}
+
+.feature {
+    height: 100%;
+    width: 195px;
+    text-align: center;
+    margin: 60px 40px;
+}
+
+.feature img {
+    height: auto;
+    width: 50px;
+    opacity: 0.9;
+}
+
+.meta {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size:medium;
+    color: rgb(100, 98, 98);
+}
+
+.meta a {
+    text-decoration: none;
+    color: rgb(100, 98, 98);
+}
+
+.meta a:hover {
+    color: rgb(146, 5, 5)
+}
+
+#reserve {
+    height: 320px;
+    position: relative;
+    background-image: url(/media/book-min.jpg);
+    background-position: left;
+    background-size: cover;
+    background-repeat: space;
+}
+
+#reserveText {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    color: seashell;
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+#reserveText p {
+    font-size: 18px;
+    font-weight: normal;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(211, 210, 210);
+}
+
+#testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 30px;
+    margin: 0px 50px 50px 50px;
+}
+
+.customer {
+    height: 100%;
+    width: 185px;
+    text-align: center;
+    margin: 40px;
+}
+
+.customer img {
+    height: 95px;
+    width: 90px;
+    border-radius: 50%;
+    filter: drop-shadow(2px 2px 4px black);
+}
+
+#blog {
+    background-color: rgb(26, 26, 26);
+    padding-bottom: 20px;
+}
+
+#imgHead {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#imgHead img {
+    height: 280px;
+    width: 280px;
+}
+
+#posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    justify-items: center;
+    column-gap: 40px;
+    row-gap: 80px;
+    margin: 70px 100px;
+}
+.post {
+    height: 380px;
+    width: 280px;
+    text-align: center;
+    background-color: white;
+    filter: drop-shadow(5px 5px 5px black);
+    padding: 10px;
+}
+
+.post:hover {
+    transform: scale(1.03);
+    box-shadow: 4px 4px 5px black;
+}
+
+.post img {
+    height: 240px;
+    width: 280px;
+}
+
+.post a {
+    text-decoration: none;
+    color: rgb(102, 3, 3);
+    font-weight: bold;
+}
+
+.post a:hover {
+    color: black;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-items: center;
+    gap: 50px;
+    margin: 0px 50px 50px 50px;
+}
+
+footer .sec {
+    padding-top: 40px;
+    width: 300px;
+}
+
+#socialMedia img {
+    height: 18px;
+    width: auto;
+    opacity: 0.7;
+}
+
+#socialMedia img:hover {
+    opacity: 1;
+}
+
+
+#emailInput {
+    border: 1px solid rgb(131, 131, 131);
+    height: 40px;
+    width: 180px;
+    opacity: 0.8;
+    padding-left: 12px;
+}
+
+#submitButton {
+    margin-top: 10px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    background-color: rgb(146, 5, 5);
+    border: none;
+}
+
+#submitButton:hover {
+    opacity: 0.8;
+}
+
+#copyright {
+    border-top: 1px solid rgb(196, 192, 192);
+    padding: 30px;
+    margin: 0px 40px 0px 40px;
+}
+
+.dropbtn {
+    background-color: white;
+    padding: 10px 12px 10px 12px;
+    border: none;
+    display: none;
+    opacity: 0.8;
+  }
+
+.dropbtn img {
+    height: 32px;
+    width: 32px;
+}
+
+.dropdown {
+    position: relative;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    left: -143px;
+    background-color: #f1f1f1;
+    min-width: 190px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 8px 0px 8px 8px;
+}
+  
+.dropdown-content a {
+    color: black;
+    padding: 15px 40px 15px 25px;
+    text-decoration: none;
+    display: block;
+    border-radius: 8px 0px 8px 8px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.dropdown-content a:hover {
+    background-color: rgb(146, 5, 5);
+    color: antiquewhite;     
+}
+  
+.dropdown:hover .dropdown-content {
+      display: block; 
+}
+  
+.dropdown:hover .dropbtn { 
+    transform: scale(1.1);
+    opacity: 1;
+}
+.slideshow-container {
+    display: none;
+}
+
+
+
+
+/****************************** Media Queries ****************************/
+
+@media only screen and (max-width: 900px) {
+    
+    #navbar {
+        display: none;
+    }
+
+    #book {
+        display: none;
+    }
+
+    .dropbtn {
+        display: initial;
+    }
+
+    header {
+        height: 300px;
+    }
+    
+    header img {
+        height: 100%;
+        width: 100%;
+    }
+    #slideText {
+        top: 40px;
+        font-size: 45px;
+    }
+    
+    #slideText p {
+        font-size: 16px;
+    }
+    
+    #menu a {
+        border-radius: 5px;
+        font-size: small;
+    }
+
+    #popular {
+        margin: 0px 30px 80px 30px;
+    }
+
+    #reserve {
+        height: 230px;
+    }
+    
+    #reserveText {
+        top: 60px;
+        left: 40px;
+        font-size: 40px;
+    }
+    
+    #reserveText p {
+        font-size: 15px;
+    }
+    #dropnav {
+        float: right;
+        padding-left: 400px;
+    }
+
+    footer {
+        gap: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    #imgHead {
+        display: none;
+    }
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        display: block;
+    }
+
+    .slideshow-container img {
+        height: 360px;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 35%;
+        height: 120px;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color: black;
+        opacity: 60%;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    /* Fading animation */
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+    
+    @keyframes fade {
+        from {opacity: .4} 
+        to {opacity: 1}
+    }
+  
+  
+    header {
+        height: 200px;
+    }
+
+    #dropnav {
+        float: right;
+        padding-left: 70px;
+    }
+    
+    header img {
+        height: 100%;
+        width: 100%;
+    }
+    #slideText {
+        top: 20px;
+        left: 25px;
+        font-size: 32px;
+    }
+
+    #posts {
+        justify-items: center;
+        margin: 60px 0px;
+    }
+
+    #slideText p {
+        font-size: 12px;
+    }
+    #menu a {
+        border-radius: 5px;
+        font-size: 10px;
+        padding: 8px 12px 8px 12px;
+    }
+    #reserve {
+        height: 180px;
+    }
+    
+    #reserveText {
+        top: 60px;
+        left: 20px;
+        font-size: 30px;
+    }
+    
+    #reserveText p {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+

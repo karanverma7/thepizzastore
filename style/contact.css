@@ -1,0 +1,90 @@
+#contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 30px 70px;
+    align-content: flex-start;
+}
+
+#contactInfo input { 
+    border: 1px solid rgb(131, 131, 131);
+    height: 45px;
+    width: 300px;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    padding: 0px 20px;
+    color: rgb(131, 131, 131);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#contactInfo input:focus { 
+    outline-color: rgb(204, 0, 0);
+    outline-style: solid;
+}
+
+#contactInfo textarea { 
+    border: 1px solid rgb(131, 131, 131);
+    margin-bottom: 20px;
+    opacity: 0.8;
+    height: 120px;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#contactInfo textarea:focus { 
+    outline-color: rgb(204, 0, 0);
+    outline-style: solid;
+}
+
+#contactInfo input[type=submit] {
+    color: white;
+    background: rgb(156, 4, 4);
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    transition: background 300ms ease-out;
+    width: 220px;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+}
+
+#contactInfo input[type=submit]:hover {
+    color: rgb(156, 4, 4);
+    background: white;
+    border: 2px solid rgb(156, 4, 4);
+}
+
+
+/****************************** Media Queries ****************************/
+
+@media only screen and (max-width: 900px) {
+
+    #contactInfo {
+        margin: 30px 10px;
+    }
+    
+    #contactInfo input { 
+        height: 40px;
+        width: 260px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #contactInfo {
+        margin: 10px 0px;
+    }
+    
+    #contactInfo input { 
+        height: 40px;
+        width: 260px;
+    }
+
+    #contactInfo form {
+        margin-top: 70px;
+    }
+
+}

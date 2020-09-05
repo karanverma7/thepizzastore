@@ -1,0 +1,107 @@
+
+#reservation {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+    justify-items: center;
+    margin: 50px 100px;
+    margin-bottom: 20px;
+}
+
+#reservation input { 
+    border: 1px solid rgb(131, 131, 131);
+    height: 45px;
+    width: 340px;
+    margin: 20px 0px;
+    opacity: 0.8;
+    padding: 0px 20px;
+    color: rgb(131, 131, 131);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#reservation input:focus { 
+    outline-color: rgb(204, 0, 0);
+    outline-style: solid;
+}
+
+#message {
+    width: 864px;
+    height: 160px;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#message textarea { 
+    border: 1px solid rgb(131, 131, 131);
+    margin: 20px 0px;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#message textarea:focus { 
+    outline-color: rgb(204, 0, 0);
+    outline-style: solid;
+}
+
+input[type=submit] {
+    color: white;
+    background: rgb(156, 4, 4);
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: medium;
+    font-weight: bold;
+    transition: background 300ms ease-out;
+    width: 220px;
+    height: 45px;
+    border: none;
+    border-radius: 7px;
+}
+
+input[type=submit]:hover {
+    color: rgb(156, 4, 4);
+    background: white;
+    border: 2px solid rgb(156, 4, 4);
+}
+
+
+/****************************** Media Queries ****************************/
+
+@media only screen and (max-width: 900px) {
+
+    #reservation {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    #reservation input { 
+        height: 35px;
+        width: 200px;
+    }
+
+    #message {
+        width: 520px;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    #slideText p {
+        font-size: 10px;
+    }
+
+    #reservation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    #reservation input { 
+        height: 40px;
+        width: 280px;
+    }    
+    #message {
+        width: 320px;
+    }
+}
