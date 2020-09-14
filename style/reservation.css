@@ -5,6 +5,7 @@
     justify-items: center;
     margin: 50px 100px;
     margin-bottom: 20px;
+    column-gap: 50px;
 }
 
 #reservation input { 

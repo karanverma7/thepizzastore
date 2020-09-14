@@ -122,8 +122,9 @@ article {
     margin: 0px 80px 80px 80px;
 }
 .popDish {
-    height: 370px;
+    height: 380px;
     width: 260px;
+    position: relative;
     text-align: center;
     border-radius: 30px;
     background-color: rgb(241, 241, 241);
@@ -138,9 +139,12 @@ article {
 }
 
 .popDish #price {
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
     color: rgb(146, 5, 5) ;
+    position: absolute;
+    bottom: 15px;
+    left: 95px;
 }
 .popDish img {
     height: 220px;
@@ -471,6 +475,15 @@ footer .sec {
 
 
 @media only screen and (max-width: 600px) {
+
+    .sectionHead {
+        font-size: 28px;
+    }
+
+    .sectionHead .meta {
+        font-size: 14px;
+        font-weight: 500;
+    }
 
     #imgHead {
         display: none;
